@@ -1,0 +1,35 @@
+#include <winver.h>
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 1, 0, 0, 0
+PRODUCTVERSION 1, 0, 0, 0
+FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+	FILEFLAGS VS_FF_DEBUG
+#else
+	FILEFLAGS 0x0L
+#endif
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_DLL
+FILESUBTYPE VFT2_UNKNOWN
+
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "000004b0"
+		BEGIN
+			VALUE "CompanyName", "REC GmbH"
+			VALUE "FileDescription", "REC GmbH RPC library"
+			VALUE "FileVersion", "1, 0, 0, 0"
+			VALUE "InternalName", "rec_rpc"
+			VALUE "LegalCopyright", "Copyright (C) 2004-2016"
+			VALUE "OriginalFilename", "rec_rpc.dll"
+			VALUE "ProductName", "REC GmbH RPC"
+			VALUE "ProductVersion", "1, 0, 0, 0"
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x0, 1200
+	END
+END
